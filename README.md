@@ -1,2 +1,3 @@
 # vparse
-Simple version parser
+
+Simple version parser.
