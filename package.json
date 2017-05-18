@@ -1,11 +1,14 @@
 {
   "name": "vparse",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple version parser",
   "main": "index.js",
   "scripts": {
     "test": "jasmine-node test"
   },
+  "files": [
+    "index.js"
+  ],
   "homepage": "https://github.com/vitaly-t/vparse",
   "repository": {
     "type": "git",
