@@ -1,6 +1,8 @@
 # vparse
 
-Simple Version Parser.
+Simple Version Parser, for Client + Server.
+
+[![Build Status](https://travis-ci.org/vitaly-t/vparse.svg?branch=master)](https://travis-ci.org/vitaly-t/vparse)
 
 ## Installing
 
@@ -10,12 +12,26 @@ $ npm install vparse
 
 ## Usage
 
+* **Node.js**
+
 ```js
 var parseVersion = require('vparse');
 
-var v = parseVersion('1.2.3.4');
+parseVersion('1.2.3.4');
 ```
-Returns an object:
+
+* **Browser**
+
+```html
+<script src="./vparse"></script>
+
+<script>
+    parseVersion('1.2.3.4');
+</script>
+```
+
+Function `parseVersion` returns an object:
+
 ```js
 {
     major: 1,
@@ -28,6 +44,8 @@ Returns an object:
 ```
 
 ## Features
+
+Passing into `parseVersion` a non-string value will throw an error.
 
 The parser supports the following syntax:
 
