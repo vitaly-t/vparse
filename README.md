@@ -1,8 +1,8 @@
 # vparse
 
-Simple Version Parser, for both Client and Server.
+Simple/smallest version parser, for both client and server.
 
-It is the minimum needed to parse a version string, when bringing in `semver` for that is an overkill.
+It is the minimum for parsing versions, when bringing in `semver` for that is an overkill.
 
 [![Build Status](https://travis-ci.org/vitaly-t/vparse.svg?branch=master)](https://travis-ci.org/vitaly-t/vparse)
 
@@ -41,7 +41,7 @@ Function `parseVersion` returns an object:
     patch: 3,
     build: 4,
     parsed: [1, 2, 3, 4], // is always an array of 4 integers
-    isEmpty: false, // = true when 'parsed' is all zeros - [0, 0, 0, 0]    
+    isEmpty: false, // = true when 'parsed' = [0, 0, 0, 0]    
     text: '1.2.3.4' // normalized version string
 }
 ```

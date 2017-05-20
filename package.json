@@ -18,8 +18,9 @@
     "url": "https://github.com/vitaly-t/vparse/issues"
   },
   "keywords": [
-    "version",
-    "parser"
+    "version parser",
+    "parse version",
+    "parseVersion"
   ],
   "author": {
     "name": "Vitaly Tomilov",
