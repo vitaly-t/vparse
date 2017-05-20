@@ -49,9 +49,9 @@ Function `parseVersion` returns an object:
 
 Function `compare` takes either a version string or a pre-parsed object, and returns:
 
- - `0` when the versions are the same
- - `1` when `this` version is greater
- - `-1` when `this` version is lesser 
+ - `0` - when the versions are the same
+ - `1` - when `this` version is greater
+ - `-1` - when `this` version is lesser 
 
 ## Features
 
