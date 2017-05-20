@@ -1,6 +1,6 @@
 {
   "name": "vparse",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Simple Version Parser, for Client + Server.",
   "main": "index.js",
   "scripts": {
