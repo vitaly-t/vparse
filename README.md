@@ -1,7 +1,8 @@
 # vparse
 
-Simple Version Parser (for Client + Server), the minimum needed to parse a version string,
-when bringing in `semver` for that is an overkill.
+Simple Version Parser, for both Client and Server.
+
+It is the minimum needed to parse a version string, when bringing in `semver` for that is an overkill.
 
 [![Build Status](https://travis-ci.org/vitaly-t/vparse.svg?branch=master)](https://travis-ci.org/vitaly-t/vparse)
 
