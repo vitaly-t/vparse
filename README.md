@@ -45,9 +45,9 @@ Function `parseVersion` returns an object:
 
 ## Features
 
-Passing into `parseVersion` a non-string value will throw an error.
-
 The parser supports the following syntax:
 
 * Skipping numbers, i.e. `.1..4`
 * An empty string is the same as `0.0.0.0`
+
+Passing in a non-string value will throw an error.
