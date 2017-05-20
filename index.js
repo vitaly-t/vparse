@@ -10,6 +10,7 @@
         };
         v.isEmpty = !v.major && !v.minor && !v.patch && !v.build;
         v.parsed = [v.major, v.minor, v.patch, v.build];
+        v.text = v.parsed.join('.');
         return v;
     }
 

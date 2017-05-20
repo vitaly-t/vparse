@@ -38,8 +38,9 @@ Function `parseVersion` returns an object:
     minor: 2,
     patch: 3,
     build: 4,
-    isEmpty: false, // = true when parsed = [0, 0, 0, 0]
-    parsed: [1, 2, 3, 4] // parsed version numbers
+    parsed: [1, 2, 3, 4], // parsed version numbers - always an array of 4 integers
+    isEmpty: false, // = true when 'parsed' is all zeros - [0, 0, 0, 0]    
+    text: '1.2.3.4' // normalized version string
 }
 ```
 

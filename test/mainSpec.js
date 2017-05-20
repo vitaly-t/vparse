@@ -9,16 +9,18 @@ describe('empty version', function () {
             minor: 0,
             patch: 0,
             build: 0,
+            parsed: [0, 0, 0, 0],
             isEmpty: true,
-            parsed: [0, 0, 0, 0]
+            text: '0.0.0.0'
         });
         expect(parse(new String())).toEqual({
             major: 0,
             minor: 0,
             patch: 0,
             build: 0,
+            parsed: [0, 0, 0, 0],
             isEmpty: true,
-            parsed: [0, 0, 0, 0]
+            text: '0.0.0.0'
         });
     });
     it('must ignore spaces', function () {
@@ -27,8 +29,9 @@ describe('empty version', function () {
             minor: 0,
             patch: 0,
             build: 0,
+            parsed: [0, 0, 0, 0],
             isEmpty: true,
-            parsed: [0, 0, 0, 0]
+            text: '0.0.0.0'
         });
     });
     it('must ignore dots', function () {
@@ -37,8 +40,9 @@ describe('empty version', function () {
             minor: 0,
             patch: 0,
             build: 0,
+            parsed: [0, 0, 0, 0],
             isEmpty: true,
-            parsed: [0, 0, 0, 0]
+            text: '0.0.0.0'
         });
     });
     it('must initialize correctly', function () {
@@ -47,8 +51,9 @@ describe('empty version', function () {
             minor: 0,
             patch: 0,
             build: 0,
+            parsed: [0, 0, 0, 0],
             isEmpty: true,
-            parsed: [0, 0, 0, 0]
+            text: '0.0.0.0'
         });
     });
 });
@@ -77,8 +82,9 @@ describe('valid input', function () {
             minor: 2,
             patch: 3,
             build: 4,
+            parsed: [1, 2, 3, 4],
             isEmpty: false,
-            parsed: [1, 2, 3, 4]
+            text: '1.2.3.4'
         });
     });
     it('must support long numbers', function () {
@@ -87,8 +93,9 @@ describe('valid input', function () {
             minor: 22222222,
             patch: 33333333,
             build: 44444444,
+            parsed: [12345678, 22222222, 33333333, 44444444],
             isEmpty: false,
-            parsed: [12345678, 22222222, 33333333, 44444444]
+            text: '12345678.22222222.33333333.44444444'
         });
     });
     it('must support skipping numbers', function () {
@@ -97,28 +104,31 @@ describe('valid input', function () {
             minor: 7,
             patch: 0,
             build: 0,
+            parsed: [0, 7, 0, 0],
             isEmpty: false,
-            parsed: [0, 7, 0, 0]
+            text: '0.7.0.0'
         });
         expect(parse('...7')).toEqual({
             major: 0,
             minor: 0,
             patch: 0,
             build: 7,
+            parsed: [0, 0, 0, 7],
             isEmpty: false,
-            parsed: [0, 0, 0, 7]
+            text: '0.0.0.7'
         });
         expect(parse('2..7')).toEqual({
             major: 2,
             minor: 0,
             patch: 7,
             build: 0,
+            parsed: [2, 0, 7, 0],
             isEmpty: false,
-            parsed: [2, 0, 7, 0]
+            text: '2.0.7.0'
         });
     });
 
-    // TODO: This one fails
+    // TODO: This one is not supported yet
     /*
     it('must ignore spaces', function () {
         expect(parse('  1  .  2  .  3  .  4')).toEqual({
@@ -126,8 +136,9 @@ describe('valid input', function () {
             minor: 2,
             patch: 3,
             build: 4,
+            parsed: [1, 2, 3, 4],
             isEmpty: false,
-            parsed: [1, 2, 3, 4]
+            text: '1.2.3.4'
         });
     });
 
