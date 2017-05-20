@@ -34,7 +34,7 @@
     "npm": ">=1.4"
   },
   "devDependencies": {
-    "coveralls": "2.13",
+    "coveralls": "2.11",
     "istanbul": "0.4",
     "jasmine-node": "1.x"
   }
