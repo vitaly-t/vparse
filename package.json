@@ -1,10 +1,12 @@
 {
   "name": "vparse",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Simple Version Parser, for Client + Server.",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine-node test"
+    "test": "jasmine-node test",
+    "coverage": "istanbul cover ./node_modules/jasmine-node/bin/jasmine-node test",
+    "travis": "istanbul cover ./node_modules/jasmine-node/bin/jasmine-node test --captureExceptions && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "files": [
     "index.js"
@@ -32,6 +34,8 @@
     "npm": ">=1.4"
   },
   "devDependencies": {
+    "coveralls": "2.13",
+    "istanbul": "0.4",
     "jasmine-node": "1.x"
   }
 }
