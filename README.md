@@ -13,6 +13,8 @@ It is the minimum for parsing and comparing versions, when use of `semver` is an
 $ npm install vparse
 ```
 
+See also the [TypeScript implementation] of the library.
+
 ## Usage
 
 * **Node.js**
@@ -67,3 +69,4 @@ The parser also supports the following syntax:
 Passing in a non-string value will throw an error.
 
 [TypeScript]:./ts
+[TypeScript implementation]:./ts
