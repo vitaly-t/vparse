@@ -5,7 +5,7 @@ additionally exports class [Version], so you can either use it directly or via t
 
 ## Installing
 
-Simply add file `vparse.ts` to your project.
+Simply add file `ts/vparse.ts` to your project.
 
 ## Usage
 
