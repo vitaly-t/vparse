@@ -1,6 +1,6 @@
 # vparse
 
-The smallest version parser, for client + server.
+The smallest version parser, for client + server, done natively in JavaScript + [TypeScript].
 
 It is the minimum for parsing and comparing versions, when use of `semver` is an overkill.
 
@@ -65,3 +65,5 @@ The parser also supports the following syntax:
 * An empty string is the same as `0.0.0.0`
 
 Passing in a non-string value will throw an error.
+
+[TypeScript]:./ts

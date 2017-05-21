@@ -1,6 +1,6 @@
 {
   "name": "vparse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The smallest version parser, for client + server.",
   "main": "index.js",
   "scripts": {
@@ -36,6 +36,7 @@
   "devDependencies": {
     "coveralls": "2.11",
     "istanbul": "0.4",
-    "jasmine-node": "1.x"
+    "jasmine-node": "1.x",
+    "typescript": "2.3"
   }
 }
