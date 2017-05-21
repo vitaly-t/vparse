@@ -1,7 +1,7 @@
 {
   "name": "vparse",
-  "version": "0.0.9",
-  "description": "Simple Version Parser, for Client + Server.",
+  "version": "1.0.0",
+  "description": "The smallest version parser, for client + server.",
   "main": "index.js",
   "scripts": {
     "test": "jasmine-node test",

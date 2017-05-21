@@ -1,6 +1,6 @@
 # vparse
 
-Simple/smallest version parser, for both client and server.
+The smallest version parser, for client + server.
 
 It is the minimum for parsing and comparing versions, when use of `semver` is an overkill.
 
@@ -50,18 +50,18 @@ Function `parseVersion` returns an object:
 Function `compare` takes either a version string or a pre-parsed object, and returns:
 
  - `0` - when the versions are the same
- - `1` - when `this` version is greater
- - `-1` - when `this` version is lesser 
+ - `1` - when `this` version is greater / later
+ - `-1` - when `this` version is lesser / earlier
 
 ## Features
 
 All symbols that are not digits or dots are removed before parsing the string. 
 
-As a result, a version string like `^1.2alfa.30.*` becomes `1.2.30.0`.
+As a result, a version string like `^1.2alfa.3 0.*` becomes `1.2.30.0`.
 
 The parser also supports the following syntax:
 
-* Skipping numbers, i.e. `.1..4`
+* Skipping numbers, i.e. `.1..4` = `0.1.0.4`
 * An empty string is the same as `0.0.0.0`
 
 Passing in a non-string value will throw an error.
