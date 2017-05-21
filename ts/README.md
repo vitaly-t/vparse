@@ -1,11 +1,13 @@
 # TypeScript
 
-This is a TypeScript re-implementation of the library, identical with the [JavaScript version], except it additionally
-exports class [Version], so you can either use it directly or via the same `parseVersion` function.
+This is a complete TypeScript re-implementation of the library, identical with the [JavaScript version], except it
+additionally exports class [Version], so you can either use it directly or via the same `parseVersion` function.
+
+## Installing
+
+Simply add file `vparse.ts` to your project.
 
 ## Usage
-
-Simply add file `vparse.ts` into your project.
 
 * Directly via class `Version`:
 
