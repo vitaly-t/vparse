@@ -1,0 +1,8 @@
+.idea/
+node_modules/
+coverage/
+API/
+ts/*.js
+ts/*.map
+test/ts/*.js
+test/ts/*.map
