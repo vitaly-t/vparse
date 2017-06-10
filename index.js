@@ -27,7 +27,7 @@
         return 0;
     }
 
-    /* istanbul ignore next */
+    /* istanbul ignore else */
     if (typeof module === 'object' && module && typeof module.exports === 'object') {
         module.exports = parseVersion;
     }
